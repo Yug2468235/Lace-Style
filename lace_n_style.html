@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lace N Style</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #f4b400;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x800');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #f4b400;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ffc107;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .product p {
+            color: #777;
+            font-size: 16px;
+            margin: 0 15px 15px;
+        }
+        .product a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #f4b400;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .product a:hover {
+            background: #ffc107;
+        }
+        .payment {
+            margin: 40px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .payment h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .payment-options {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .payment-options img {
+            width: 50px;
+            height: auto;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .payment-options img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Lace N Style
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero" id="home">
+        <div>
+            <h1>Step into Luxury</h1>
+            <p>Discover the finest sneakers at unbeatable prices.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Lace N Style is your destination for luxury sneakers at the best prices. Explore our curated collection and step up your style game.</p>
+    </section>
+    <section class="section" id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Sneaker 1">
+                <h3>Sneaker 1</h3>
+                <p>High-quality design with unbeatable comfort.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Sneaker 2">
+                <h3>Sneaker 2</h3>
+                <p>Step up your style game with this classic pair.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Sneaker 3">
+                <h3>Sneaker 3</h3>
+                <p>Premium sneakers for everyday luxury.</p>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="payment" id="payment">
+        <h2>Payment Options</h2>
+        <p>We accept the following payment methods:</p>
+        <div class="payment-options">
+            <img src="https://via.placeholder.com/50" alt="Visa">
+            <img src="https://via.placeholder.com/50" alt="MasterCard">
+            <img src="https://via.placeholder.com/50" alt="PayPal">
+            <img src="https://via.placeholder.com/50" alt="Apple Pay">
+            <img src="https://via.placeholder.com/50" alt="Google Pay">
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Lace N Style. All Rights Reserved.
+    </footer>
+</body>
+</html>
